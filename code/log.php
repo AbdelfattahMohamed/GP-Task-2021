@@ -18,18 +18,18 @@
          
               
          if (mysqli_num_rows($resultrole) == 1){
-           header("Location: \GP-Task-2021/pages/doctor.html");
+           header("Location:\GP-Task-2021/pages/doctor.html");
            exit;
          }
          else {
-            header("Location:  \GP-Task-2021/pages/pharmacist.html");
+            header("Location:\GP-Task-2021/pages/pharmacist.html");
             exit;
          }
          
       }
 
       else {
-          print("errore");
+          print(" fault in email or password ");
       }
       
       
