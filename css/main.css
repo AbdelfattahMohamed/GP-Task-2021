@@ -2248,7 +2248,7 @@ nav a:hover {
 
 .about-right h1 {
   color: #fff;
-  margin-bottom: 45px;
+  
 }
 
 @media (max-width: 1280px) and (min-width: 988px) {
@@ -2840,6 +2840,7 @@ input {
 textarea {
   outline: none;
   border: none;
+  background-color: #ccc;
 }
 
 textarea:focus, input:focus {
@@ -3247,4 +3248,16 @@ iframe {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+
+/* Voice Text*/
+.voice_text{
+  font-family: 'Roboto Condensed', sans-serif;;
+  color: #222222;
+  padding-top: 20px;
+  text-align: center;
+}
+.voice_text2{
+  color: #f1f1f1;
 }

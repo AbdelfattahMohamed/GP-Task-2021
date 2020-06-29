@@ -16,7 +16,9 @@
 			============================================= -->
 			<link rel="stylesheet" href="css/linearicons.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/main.css">
+            <link rel="stylesheet" href="css/main.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -61,12 +63,11 @@
 						</div>
 				</div>
 			</section>
-    <div class="container-fluid align-center">
-        <figure class="swing">
-            <img src="assets/img/code-mic-150.png" width="200" >
-          </figure> 
-        <img src="assets/img/img1.png" width="100" >  
-        <h1>Voice Prescription</h1>
+            <div class="container-fluid align-center">
+                <!--<figure class="swing">
+                     <img src="assets/img/code-mic-150.png" width="200" >
+                </figure> -->
+        <h1 class="voice_text">Voice Prescription</h1>
         <p class="page-description">This part allows you to take voice, text Prescriptions and play them back.</p>
         <br>
         <br>
@@ -74,7 +75,7 @@
         <div class="app">
             <div class="row">
                 <div class="col-md-6 align-center">
-                    <h3>Add New Voice Prescription </h3>
+                    <h3 class="voice_text">Add New Voice Prescription </h3>
                     <div class="input-single">
                         <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
                     </div>
@@ -86,7 +87,7 @@
                         <strong>Start Recognition</strong> button and allow access.</p>
                 </div>
                 <div class="col-md-6 align-center">
-                    <h3>My Voice Notes</h3>
+                    <h3 class="voice_text">My Voice Notes</h3>
                     <ul id="notes">
                         <li>
                             <p class="no-notes">You don't have any notes.</p>
@@ -97,28 +98,98 @@
             <!-- /row -->
         </div>
         <!-- /app -->
-    </div>
-    <div class="container-fluid align-center"   >
-        <table>
-            <tr>
-              <th>ID</th>
-              <th>Medicine</th>
-              <th>Rec.</th>
-            </tr>
-            <tr>
-              <td>ex1</td>
-              <td>ex2</td>
-              <td>ex3</td>
-            </tr>
-            <tr>
-              <td>ex11</td>
-              <td>ex12</td>
-              <td>ex13</td>
-            </tr>
+            </div>
+            <section class="Add_here">
+                <section class="about-area" id="appoinment">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-end align-items-center">
+                            <div class="col-lg-6 col-md-12 about-left no-padding">
+                                <div class="col-md-6 align-center">
+                                    <h3 class="voice_text voice_text2">My Voice Notes</h3>
+                                    <ul id="notes"><li class="note">
+                                    <p class="header">
+                                    <span class="date">6/27/2020, 2:40:44 AM</span>
+                                    <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+                                    <a href="#" class="delete-note" title="Delete">Delete</a>
+                                    </p>
+                                    <p class="content">my name is at the moment  my name is hello again</p>
+                                </li><li class="note">
+                                    <p class="header">
+                                    <span class="date">6/27/2020, 2:52:48 AM</span>
+                                    <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+                                    <a href="#" class="delete-note" title="Delete">Delete</a>
+                                    </p>
+                                    <p class="content">last position</p>
+                                </li><li class="note">
+                                    <p class="header">
+                                    <span class="date">6/29/2020, 7:27:39 PM</span>
+                                    <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+                                    <a href="#" class="delete-note" title="Delete">Delete</a>
+                                    </p>
+                                    <p class="content">hello</p>
+                                </li><li class="note">
+                                    <p class="header">
+                                    <span class="date">6/26/2020, 9:44:08 PM</span>
+                                    <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+                                    <a href="#" class="delete-note" title="Delete">Delete</a>
+                                    </p>
+                                    <p class="content">I'm speaking now</p>
+                                </li></ul>
+                                            </div>
 
-          </table>
-          
-    </div>
+
+
+
+
+                            </div>
+                            <div class="col-lg-6 col-md-12 about-right no-padding">
+                                <h1 class="voice_text">Add a <br> Prescription</h1>
+                                <form class="booking-form" id="myForm" action="donate.php">
+                                         <div class="row">
+                                            						
+                                             <div class="col-lg-12 d-flex flex-column">
+                                                 <input name="name" placeholder="GMC Case details" onfocus="this.placeholder = ''" onblur="this.placeholder = 'GMC Case details'" class="form-control mt-20" required="" type="text" required>
+                                             </div>
+                                             <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Details of the examiner" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Details of the examiner'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Details of the doctor being assessed" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Details of the doctor being assessed'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Examintaion Report" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Examintaion Report'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Opinion on fitness to practise" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Opinion on fitness to practise'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input id="datepicker2" name="app-date" class="single-in mt-20"  onblur="this.placeholder = 'Appoinments'" type="text" placeholder="Appoinments" required>
+                                            </div>
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Notes" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Notes'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+                                            
+                                            <div class="col-lg-12 flex-column">
+                                                <textarea class="form-control mt-20" name="Impairing diagonsis(es)" placeholder="Impairing diagonsis(es)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Impairing diagonsis(es)'" required=""></textarea>
+                                            </div>
+    
+                                            <div class="col-lg-12 d-flex justify-content-end send-btn">
+                                                <button class="submit-btn primary-btn mt-20 text-uppercase ">CONFIRM<span class="lnr lnr-arrow-right"></span></button>
+                                            </div>
+    
+                                            <div class="alert-msg"></div>
+                                        </div>
+                                  </form>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+    
     <div id="footer">
         <div class="clearfix1">
             <div class="container">
