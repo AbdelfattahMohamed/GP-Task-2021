@@ -10,6 +10,13 @@
       $sqlrole = "select * from users where email = '".$name."'AND password = '".$pass."' AND role = '". 1 ."' limit 1  ";
       $result = mysqli_query($c,$sql);
       $resultrole = mysqli_query($c,$sqlrole);
+
+      // session 
+         session_start();
+         $nameuser = mysqli_query($c, "select name from doctors where email = '". $name ."' ");
+        
+         $_SESSION['user'] =  mysqli_fetch_array($nameuser)[0];
+      
    
 
      
@@ -18,18 +25,18 @@
          
               
          if (mysqli_num_rows($resultrole) == 1){
-           header("Location:\GP-Task-2021/pages/doctor.html");
+           header("Location:doctor.php");
            exit;
          }
          else {
-            header("Location:\GP-Task-2021/pages/pharmacist.html");
+            header("Location:pharmacist.php");
             exit;
          }
          
       }
 
       else {
-          print(" fault in email or password ");
+          print(" fault in email or password "); 
       }
       
       
@@ -37,3 +44,4 @@
    }
 
 ?>
+
