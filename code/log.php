@@ -16,7 +16,7 @@
          $nameuser = mysqli_query($c, "select name from doctors where email = '". $name ."' ");
         
          $_SESSION['user'] =  mysqli_fetch_array($nameuser)[0];
-      
+         $_SESSION['email'] = $_POST['username'];
    
 
      
@@ -25,7 +25,7 @@
          
               
          if (mysqli_num_rows($resultrole) == 1){
-           header("Location:doctor.php");
+           header("Location:/GP-Task-2021\pages/doctor.html");
            exit;
          }
          else {

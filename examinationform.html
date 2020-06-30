@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Voice Note App</title>
+    <meta name="description" content="A Voice Note App that allows you to take voice and/or text notes and play them back.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/clogo.png">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CDN CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-0Mou2qXGeXK7k/Ue/a1hspEVcEP2zCpoQZw8/MPeUgISww+VmDJcy2ri9tX0a6iy" crossorigin="anonymous">
+    <!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/main.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header Area -->
+	<!--		<header class="default-header">
+				<div class="container">
+					<div class="header-wrap">
+						<div class="header-top d-flex justify-content-between align-items-center">
+							<div class="logo">
+								<a href="#home">
+                                    <img class="logoimg" src="img/clogo.png" alt="">
+                                </a>
+							</div>
+							<div class="main-menubar d-flex align-items-center">
+								<nav class="hide">
+									<a href="#home">Home</a>
+									<a href="#service">Services</a>
+									<a href="#appoinment">Appoinment</a>
+									<a href="#consultant">Consultants</a>
+								</nav>
+								<div class="menu-bar"><span class="lnr lnr-menu-circle"></span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </header>
+            -->
+    <!-- start banner Area -->
+			
+            <div class="container-fluid align-center">
+                <!--<figure class="swing">
+                     <img src="assets/img/code-mic-150.png" width="200" >
+                </figure> -->
+        <h1 class="voice_text">Voice Prescription</h1>
+        <p class="page-description">please record the important fields before submit the last form.</p>
+        <br>
+        <br>
+        <h3 class="no-browser-support">Sorry!, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+        <div class="app">
+            <div class="row">
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">Add New Voice Prescription </h3>
+                    <div class="input-single">
+                        <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                    </div>
+                    
+                    <button id="start-record-btn" class="btn-success primary-btn mt-20 text-uppercase" title="Start Recording">Start </button>
+                    <button id="pause-record-btn" class="btn-warning primary-btn2 mt-20 text-uppercase" title="Pause Recording">Pause </button>
+                    <button id="save-note-btn" class="btn-info primary-btn2 mt-20 text-uppercase" title="Save Note">Save Voice Prescription</button>
+                    <p id="recording-instructions">Press the
+                        <strong>Start Recognition</strong> button and allow access.</p>
+                </div>
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">My Voice Notes</h3>
+                    <ul id="notes">
+                        <li>
+                            <p class="no-notes">You don't have any notes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /app -->
+        </div>
+
+
+
+
+        <div class="app">
+            <div class="row">
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">Add New Voice Prescription </h3>
+                    <div class="input-single">
+                        <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                    </div>
+                    
+                    <button id="start-record-btn" class="btn-success primary-btn mt-20 text-uppercase" title="Start Recording">Start </button>
+                    <button id="pause-record-btn" class="btn-warning primary-btn2 mt-20 text-uppercase" title="Pause Recording">Pause </button>
+                    <button id="save-note-btn" class="btn-info primary-btn2 mt-20 text-uppercase" title="Save Note">Save Voice Prescription</button>
+                    <p id="recording-instructions">Press the
+                        <strong>Start Recognition</strong> button and allow access.</p>
+                </div>
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">My Voice Notes</h3>
+                    <ul id="notes">
+                        <li>
+                            <p class="no-notes">You don't have any notes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+
+
+
+
+        <div class="app">
+            <div class="row">
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">Add New Voice Prescription </h3>
+                    <div class="input-single">
+                        <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                    </div>
+                    
+                    <button id="start-record-btn" class="btn-success primary-btn mt-20 text-uppercase" title="Start Recording">Start </button>
+                    <button id="pause-record-btn" class="btn-warning primary-btn2 mt-20 text-uppercase" title="Pause Recording">Pause </button>
+                    <button id="save-note-btn" class="btn-info primary-btn2 mt-20 text-uppercase" title="Save Note">Save Voice Prescription</button>
+                    <p id="recording-instructions">Press the
+                        <strong>Start Recognition</strong> button and allow access.</p>
+                </div>
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">My Voice Notes</h3>
+                    <ul id="notes">
+                        <li>
+                            <p class="no-notes">You don't have any notes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+
+
+     <form >
+        <div class="app">
+            <div class="row">
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">Add New Voice Prescription </h3>
+                    <div class="input-single">
+                        <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                    </div>
+                    
+                    <button id="start-record-btn" class="btn-success primary-btn mt-20 text-uppercase" title="Start Recording">Start </button>
+                    <button id="pause-record-btn" class="btn-warning primary-btn2 mt-20 text-uppercase" title="Pause Recording">Pause </button>
+                    <button type="submit" id="save-note-btn" class="btn-info primary-btn2 mt-20 text-uppercase" title="Save Note">Save Voice Prescription</button>
+                    <p id="recording-instructions">Press the
+                        <strong>Start Recognition</strong> button and allow access.</p>
+                </div>
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">My Voice Notes</h3>
+                    <ul id="notes">
+                        <li>
+                            <p class="no-notes">You don't have any notes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+     </form>
+        <div class="app">
+            <div class="row">
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">Add New Voice Prescription </h3>
+                    <div class="input-single">
+                        <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                    </div>
+                    
+                    <button id="start-record-btn" class="btn-success primary-btn mt-20 text-uppercase" title="Start Recording">Start </button>
+                    <button id="pause-record-btn" class="btn-warning primary-btn2 mt-20 text-uppercase" title="Pause Recording">Pause </button>
+                    <button id="save-note-btn" class="btn-info primary-btn2 mt-20 text-uppercase" title="Save Note">Save Voice Prescription</button>
+                    <p id="recording-instructions">Press the
+                        <strong>Start Recognition</strong> button and allow access.</p>
+                </div>
+                <div class="col-md-6 align-center">
+                    <h3 class="voice_text">My Voice Notes</h3>
+                    <ul id="notes">
+                        <li>
+                            <p class="no-notes">You don't have any notes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="Add_here">
+                <section class="about-area" id="appoinment">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-end align-items-center">
+                            <div class="col-lg-6 col-md-12 about-left no-padding">
+                                <div class="col-md-6 align-center">
+                                    <h3 class="voice_text voice_text2">My Voice Notes</h3>
+                                    <ul id="notes"><li class="note">
+                                    <p class="header">
+                                    <span class="date">6/27/2020, 2:40:44 AM</span>
+                                    <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+                                    <a href="#" class="delete-note" title="Delete">Delete</a>
+                                    </p>
+                                    <p class="content">my name is at the moment  my name is hello again</p>
+                                </li><li class="note">
+                                    <p class="header">
+                                    <span class="date">6/27/2020, 2:52:48 AM</span>
+                                    <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+                                    <a href="#" class="delete-note" title="Delete">Delete</a>
+                                    </p>
+                                    <p class="content">last position</p>
+                                </li><li class="note">
+                                    <p class="header">
+                                    <span class="date">6/29/2020, 7:27:39 PM</span>
+                                    <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+                                    <a href="#" class="delete-note" title="Delete">Delete</a>
+                                    </p>
+                                    <p class="content">hello</p>
+                                </li><li class="note">
+                                    <p class="header">
+                                    <span class="date">6/26/2020, 9:44:08 PM</span>
+                                    <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+                                    <a href="#" class="delete-note" title="Delete">Delete</a>
+                                    </p>
+                                    <p class="content">I'm speaking now</p>
+                                </li></ul>
+                                            </div>
+
+
+
+
+
+                            </div>
+                            <div class="col-lg-6 col-md-12 about-right no-padding">
+                                <h1 class="voice_text">Add a <br> Prescription</h1>
+                                <form class="booking-form" id="myForm" action="donate.php">
+                                         <div class="row">
+                                            
+                                           
+                                            
+                                             <div class="col-lg-12 d-flex flex-column">
+                                                 <input name="name" placeholder="GMC Case details" onfocus="this.placeholder = ''" onblur="this.placeholder = 'GMC Case details'" class="form-control mt-20" required="" type="text" required>
+                                             </div>
+                                             <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Details of the examiner" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Details of the examiner'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Details of the doctor being assessed" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Details of the doctor being assessed'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Examintaion Report" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Examintaion Report'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+
+                                            
+
+
+
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Opinion on fitness to practise" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Opinion on fitness to practise'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input id="datepicker2" name="app-date" class="single-in mt-20"  onblur="this.placeholder = 'Appoinments'" type="text" placeholder="Appoinments" required>
+                                            </div>
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <input name="name" placeholder="Notes" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Notes'" class="form-control mt-20" required="" type="text" required>
+                                            </div>
+                                            
+                                            <div class="col-lg-12 flex-column">
+                                                <textarea class="form-control mt-20" name="Impairing diagonsis(es)" placeholder="Impairing diagonsis(es)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Impairing diagonsis(es)'" required=""></textarea>
+                                            </div>
+
+
+                                            
+    
+                                            <div class="col-lg-12 d-flex justify-content-end send-btn">
+                                                <button class="submit-btn primary-btn mt-20 text-uppercase ">CONFIRM<span class="lnr lnr-arrow-right"></span></button>
+                                            </div>
+    
+                                            <div class="alert-msg"></div>
+                                        </div>
+                                  </form>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+    
+    <div id="footer">
+        <div class="clearfix1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="center">
+                        <h6>Help the doctor
+
+                        </h6>
+                    </div>
+
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+    </div>
+    <!-- /footer -->
+    <!-- Model Speech Recognition-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script> 
+    <!-- JS Libraries-->
+             <script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/main.js"></script>
+
+</body>
+
+</html>

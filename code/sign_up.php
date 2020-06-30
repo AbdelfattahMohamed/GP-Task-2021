@@ -1,6 +1,6 @@
 <?php
 
-   $conn = mysqli_connect('localhost','root','','clinic');
+  // $conn = mysqli_connect('localhost','root','','clinic');
   
    $email = $_POST['email'];
    $name = $_POST['name'];

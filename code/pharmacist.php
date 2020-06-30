@@ -61,7 +61,7 @@
         $email = $_POST['email'];
         $name = mysqli_query($connect, "select name from patients where email = '". $email ."' ");
         $examReport = mysqli_query($connect, "select report from examination where email = '". $email ."' ");
-        $medicReport = mysqli_query($connect, "select report from medication where email = '". $email ."' ");
+        $medicReport = mysqli_query($connect, "select medication_report from examination where email = '". $email ."' ");
     }
 
 ?>
